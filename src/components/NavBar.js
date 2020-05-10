@@ -10,7 +10,7 @@ class NavBar extends Component {
     to="main"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={0}
     duration= {500}
 >Main</Link>
 <Link
@@ -18,7 +18,7 @@ class NavBar extends Component {
     to="entertainment"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={0}
     duration= {500}
 >Entertainment</Link>
 <Link
@@ -26,7 +26,7 @@ class NavBar extends Component {
     to="technology"
     spy={true}
     smooth={true}
-    offset={-70}
+    offset={0}
     duration= {500}
 >Technology</Link>
 
