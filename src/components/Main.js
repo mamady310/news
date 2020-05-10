@@ -4,7 +4,7 @@ class Main extends Component {
     state = {};
     render () {
         return (
-            <div className="main">
+            <div className="main-section"id='main'>
 
             </div>
         )
