@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 
+import React, { Component } from 'react';
+
 class Entertainment extends Component {
-    render (){
+    state = {};
+    render () {
         return (
-            <div> 
+            <div className="entertainment">
 
             </div>
         )
     }
 }
+
+export default Main;
 export default Entertainment;

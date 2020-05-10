@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
 class Main extends Component {
+    state = {};
     render () {
         return (
-            <div>
+            <div className="main">
 
             </div>
         )
     }
 }
+
 export default Main;
