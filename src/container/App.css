@@ -24,3 +24,7 @@
   height: 100vh; 
   background-color: grey;
 }
+h1{
+  padding-top: 40px;
+  text-align: center;
+}

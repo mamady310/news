@@ -6,6 +6,7 @@ class Entertainment extends Component {
     render () {
         return (
             <div className="entertainment-section" id="entertainment">
+            <h1>Entertainment</h1>
 
             </div>
         )
