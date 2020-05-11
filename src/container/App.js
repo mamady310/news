@@ -4,25 +4,23 @@ import NavBar from '../components/NavBar';
 import Main from '../components/Main';
 import Entertainment from '../components/Entertainment';
 import Technology from '../components/Technology';
+import axios from 'axios';
 
 class App extends Component {
   constructor () {
     super ()
     this.state = {
-      recipe: [],
+      recipes: [],
     }
   }
 
   componentDidMount () {
-    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
-.then(response => response.json())
-.then(res => {this.setState({recipe: [...this.state.recipe, res.meals]})
-console.log(this.state.recipe);
-// console.log(Object.entries(meal));
-})
-.catch(err => {
-	console.log(err);
-});
+    axios.get('https://www.themealdb.com/api/json/v1/1/random.php')
+      .then(res => {
+        const meals = res.data.meals
+        this.setState({ recipes: meals })
+      })
+
   }
   render () {
 
@@ -31,7 +29,7 @@ console.log(this.state.recipe);
     return (
       <div className="app">
         <NavBar />
-        <Main />
+        <Main recipes={this.state.recipes} />
         <Entertainment />
         <Technology />
 
